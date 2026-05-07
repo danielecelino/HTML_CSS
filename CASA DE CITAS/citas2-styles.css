@@ -1,0 +1,117 @@
+/* Estilos generales */
+body {
+    background-color: #FF9191; /* Rosa pastel para el fondo general */
+    font-family: Arial, Helvetica, sans-serif; /* Tipografía sans-serif limpia */
+    margin: 0;
+    padding: 0;
+    color: #000; /* Texto negro predeterminado */
+}
+
+/* El gran texto de fondo transparente */
+header {
+    text-align: center; /* Centrar el texto */
+    position: relative; /* Para el posicionamiento del pseudo-elemento */
+}
+
+header h1 {
+    font-size: 11em; /* Tamaño de fuente gigante */
+    color: #FF9FA0; /* Muy baja opacidad para el texto de fondo */
+    text-transform: uppercase; /* Todo en mayúsculas */
+    letter-spacing: 0.5rem; /* Un poco de espaciado entre letras */
+    line-height: 1; /* Para un mejor posicionamiento */
+    position: absolute; /* Para moverlo detrás de todo */
+    top: 0.3em;
+    right: 20px;
+    left: 20px;
+    white-space: nowrap; /* Evitar que el texto se rompa */
+    z-index: -1; /* Ponerlo detrás de la navegación y el contenido */
+}
+
+/* Navegación superior (aside) */
+aside {
+    margin-top: 10px;
+    position: sticky; /* Se queda fija en la parte superior al hacer scroll */
+    top: 0;
+    left: 0; /* Lo ancla al lado izquierdo absoluto */
+    
+    
+}
+
+aside ul {
+    list-style: none; /* Eliminar viñetas */
+    margin: 0;
+    margin-left: 0;
+    
+    display: flex; /* Flexbox para alineación horizontal */
+    justify-content: space-around; /* Espaciado uniforme */
+    
+}
+
+
+
+aside a {
+   
+    text-decoration: none; /* Eliminar subrayado */
+    color: #000; /* Texto negro */
+    border: 1px solid white;
+    padding: 0px 78px  ;
+    margin-left: 0;
+ 
+     
+}
+
+aside a:hover {
+    color: #444; /* Color gris oscuro al pasar el ratón */
+}
+
+/* Sección de contenido */
+section {
+    padding: 2rem;
+    max-width: 1400px; /* Ancho máximo para que se vea bien en pantallas grandes */
+    margin: 0 auto; /* Centrar el contenedor */
+}
+
+/* Títulos de autor (h2) */
+article {
+    margin-bottom: 3rem; /* Espacio entre secciones de autores */
+}
+
+article h2 {
+    grid-column: 1 ; /* Esto le dice: "empieza en la columna 1 y termina en la última" */
+    width: 100%;         /* Asegura que el bloque ocupe todo el espacio horizontal */
+    margin-bottom: 1.5rem; 
+    font-size: 1.5rem;
+    color: white;
+}
+
+/* Cuadrícula de citas (article con sus párrafos) */
+article {
+    display: flex; /* Usar CSS Grid para las citas */
+    flex-wrap: wrap; 
+    align-content: flex-start;
+    /* Crear columnas flexibles, con un ancho mínimo de 200px. 
+       Esto recrea las múltiples columnas de la foto. */
+    
+    gap: 1rem; /* Espacio entre los cuadros de citas */
+}
+
+/* Cuadros de citas (p) */
+article p {
+    border: 1px solid white; /* Borde negro fino */
+    padding: 3px;
+    margin: 0; /* Eliminar márgenes predeterminados de los párrafos */
+    font-size: 1rem; /* Tamaño de fuente normal */
+   
+    align-items: center;
+    width: 160px;
+    height: 165px; 
+    overflow: auto;
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    padding: 2rem 0;
+    color: #333; /* Texto gris oscuro */
+    font-style: italic; /* Texto en cursiva */
+}
