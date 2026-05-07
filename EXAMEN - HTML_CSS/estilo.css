@@ -1,0 +1,68 @@
+body{
+    margin: 200px;
+    margin-top: 20px;
+    font: 12pt 'Tahoma';
+    box-sizing: border-box;
+    
+    
+}
+table{
+    text-align: center;
+    border-radius: 20px;
+    padding: 2px;
+    border: 2px solid blue;
+    
+
+
+}
+th{
+    background-color: blue;
+    color: white;
+    border: 7px solid blue;
+    border-radius: 15px;
+    padding: 2px;
+    
+
+}
+tbody td{
+    background-color: white;
+    color: black;
+    border: 2px solid blue;
+    border-radius: 15px;
+    padding: 2px;
+    
+
+
+}
+.vacio{
+    empty-cells: hide;
+}
+.vacio1{
+    background-color: blue;
+}
+tfoot, tfoot td{
+    background-color: blue;
+    color: white;
+    border: 7px solid blue;
+    border-radius: 15px;
+    padding: 5px;
+
+}
+div{
+    border: 2px orangered dotted;
+    border-radius: 20px;
+    padding: 10px;
+    
+
+}
+ol{
+    list-style-type: upper-alpha;
+}
+ul{
+    list-style-type: square;
+}
+ul ul {
+    list-style-type: circle;
+    border: 2px orangered dashed;
+    border-radius: 22px;
+}
